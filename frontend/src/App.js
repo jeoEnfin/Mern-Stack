@@ -1,20 +1,31 @@
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
+import Practice from './pages/Practice';
+import RootLayout from './pages/Root';
 
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <RootLayout />,
+      // errorElement: <ErrorPage />,
+      children: [
+        {
+          path: '/',
+          element: <Home />
+        },
+        {
+          path: '/practice',
+          element: <Practice />
+        }
+      ]
+    },
+  ]);
+
   return (
-    <div>
-      <BrowserRouter>
-      <Navbar />
-        <div className="pages">
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </div>
-      </BrowserRouter> 
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
