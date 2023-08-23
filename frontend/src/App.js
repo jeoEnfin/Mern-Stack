@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from "./pages/Home";
 import Practice from './pages/Practice';
 import RootLayout from './pages/Root';
+import ErrorPage from './pages/Error';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
     {
       path: '/',
       element: <RootLayout />,
-      // errorElement: <ErrorPage />,
+      errorElement: <ErrorPage />,
       children: [
         {
           path: '/',
