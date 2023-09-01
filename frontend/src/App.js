@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Practice from './pages/Practice';
 import RootLayout from './pages/Root';
 import ErrorPage from './pages/Error';
+import Entertainment from './pages/Entertainment';
 
 function App() {
 
@@ -20,6 +21,10 @@ function App() {
         {
           path: '/practice',
           element: <Practice />
+        },
+        {
+          path: '/entertainment',
+          element: <Entertainment />
         }
       ]
     },

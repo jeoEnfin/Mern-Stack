@@ -22,6 +22,7 @@ header.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
 }
 header a {
   color: #333 ;
@@ -119,3 +120,21 @@ textarea {
 textarea.error {
   border: 1px solid var(--error);
 }
+button {
+  background: var(--primary-color);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+ }
+ button:hover {
+   background-color: #0056b3;
+ }
+ webcam {
+  justify-content: center;
+ }
+ entertainment {
+  background: black;
+ }
