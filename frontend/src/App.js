@@ -5,6 +5,7 @@ import Practice from './pages/Practice';
 import RootLayout from './pages/Root';
 import ErrorPage from './pages/Error';
 import Entertainment from './pages/Entertainment';
+import Auth from './pages/Auth';
 
 function App() {
 
@@ -25,6 +26,10 @@ function App() {
         {
           path: '/entertainment',
           element: <Entertainment />
+        },
+        {
+          path: '/auth',
+          element: <Auth />
         }
       ]
     },

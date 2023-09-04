@@ -132,9 +132,24 @@ button {
  button:hover {
    background-color: #0056b3;
  }
- webcam {
-  justify-content: center;
- }
- entertainment {
-  background: black;
- }
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.nav-Link {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: 15;
+  font-family: sans-serif;
+}
+
+.loginform {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
